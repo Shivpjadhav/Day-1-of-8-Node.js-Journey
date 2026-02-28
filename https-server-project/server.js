@@ -2,7 +2,6 @@ const http = require('http');
 let users = [
     { id: 1, name: "Shivani" }
 ];
-
 const server = http.createServer((req, res) => {
     // GET /users
     if (req.method === 'GET' && req.url === '/users') {
